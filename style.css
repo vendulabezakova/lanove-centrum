@@ -613,25 +613,19 @@ h3 {
   justify-content: center;
   width: 87px;
   height: 87px;
-  background: #00d0ff;
+  background: #ffc700;
   color: #000000e6;
   border-radius: 50%;
   text-align: center;
   font-weight: bold;
-  font-size: 0.85rem;
+  font-size: 12px;
   transform: rotate(-20deg);
-  box-shadow: 0 0 0 #ffc700, 0 #ffc700; /* výchozí: bez stínu */
   cursor: pointer;
   text-decoration: none;
-    top: -5px;
-  left: -5px;
-  transition: left 250ms, top 250ms, box-shadow 250ms;
+  text-transform: uppercase;
 }
 
-#lcProgramListResults .thumbnail .inner > .caption .order a:hover {
 
-  box-shadow: 0 0 0 #ffc700, 5px 5px 0 #ffc700; /* ostrý žlutý stín vlevo nahoře */
-}
 
 
 
