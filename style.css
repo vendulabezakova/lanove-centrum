@@ -1,32 +1,119 @@
-@font-face { 
-  font-family:BurbankBig;
-  src:url(https://www.lanovecentrum.cz/assets/default/fonts/BurbankBigRegular-Black.woff2) format("woff2"),url(https://www.lanovecentrum.cz/assets/default/fonts/BurbankBigRegular-Back.woff) format("woff");
-  font-style:normal;
-  font-weight:400;
-  font-stretch:normal;
-} 
-@font-face { 
-  font-family:BurbankBigMedium;
-  src:url(https://www.lanovecentrum.cz/assets/default/fonts/BurbankBigRegular-Medium.woff2) format("woff2"),url(https://www.lanovecentrum.cz/assets/default/fonts/BurbankBigRegular-Medium.woff) format("woff");
-  font-style:normal;
-  font-weight:400;
-  font-stretch:normal;
-} 
-  body {  
+body {  
+    line-height:20px;
+    list-style:none;
     font-family:"Source Sans Pro",sans-serif;
     font-size:16px;
-    line-height:20px;
-    color:#343434;
+    color:#555;
     font-weight:400;
-  }  
-body { 
-    margin: 0; 
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
-    font-size: 14px; 
-    line-height: 20px; 
-    color: #333; 
+  } 
+
+.inner  { 
+    position: relative; 
+
+    padding: 12px; 
     background-color: #fff;
 } 
+
+.inner .img  { 
+    position: relative; 
+    width: 100%; 
+    height: 267px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+} 
+
+.caption  { 
+    padding: 13px 0 0 0; 
+    font-size: 13px;
+} 
+
+#style-5vdfX.style-5vdfX {  
+   background-image:url('data/images/400x400__x400y0__id8795__6d60c6eb37bf02865d026b085b0c5dd7__vysokeprekazkyhoupacka7.jpg');  
+}  
+
+/*Shadow*/
+.shadow-left { 
+    position: absolute; 
+    bottom: 0; 
+    width: 184px; 
+    height: 6px; 
+    background-repeat: no-repeat;
+    left: 0; 
+    background-position: left top; 
+    background-image: url(https://www.lanovecentrum.cz/assets/default/images/thumbnail_shadow_bottomleft.png);
+} 
+
+.shadow-right { 
+    position: absolute; 
+    bottom: 0; 
+    width: 184px; 
+    height: 6px; 
+    background-repeat: no-repeat;
+    right: 0; 
+    background-position: right top; 
+    background-image: url(https://www.lanovecentrum.cz/assets/default/images/thumbnail_shadow_bottomright.png);
+} 
+
+.thumbnail {
+    width: 100%;
+}
+
+/*Specifikace: tabulka + button*/
+.specs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Button new */
+.order a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87px;
+  height: 87px;
+  background: linear-gradient(30deg,rgb(233, 195, 3) 0%, rgb(250, 232, 64) 50%);
+  color: #000000e6;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  transform: rotate(-20deg);
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: right; 
+}
+
+.order a:hover {
+    background: #eab803;
+}
+
+table {
+    width: 66%;
+    text-align: left;
+    table-layout: fixed;
+}
+
+table tr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+table th {
+    font-weight: 400;
+}
+
+table td {
+    font-weight: 600;
+}
+
+  table th,
+  table td {
+    width: 100%;
+  }
 
 /*rozcestnik*/
 .rozcestnik {
@@ -43,711 +130,46 @@ body {
     padding-top: 15px;
 }
 
-body { 
-    color: #343434; 
-    font-size: 16px;
-} 
 
-body { 
-    overflow-x: hidden;
-} 
 
-html { 
-    font-size: 100%; 
-    -webkit-text-size-adjust: 100%; 
-    -ms-text-size-adjust: 100%;
-} 
 
-html { 
-    font-family: "Source Sans Pro",sans-serif; 
-    font-weight: 400;
-} 
-
-html { 
-    color: #343434; 
-    font-size: 16px;
-} 
-
-.container { 
-    width: 940px;
-} 
-
-.container { 
-    margin-right: auto; 
-    margin-left: auto;
-} 
-
-@media (min-width: 1200px){ 
-  .container { 
-    width: 1170px;
-  } 
-}     
-
-.tinymce { 
-    line-height: 1.3em;
-} 
-
-.container { 
-    padding-top: 32px; 
-    padding-bottom: 32px;
-} 
-
-body > .container  { 
-    min-height: 300px;
-} 
-
-.container:after,.container:before { 
-    display: table; 
-    line-height: 0; 
-    content: "";
-} 
-
-.container:after { 
-    clear: both;
-} 
-
-h1 { 
-    margin: 10px 0; 
-    font-family: inherit; 
-    font-weight: 700; 
-    line-height: 20px; 
-    color: inherit; 
-    text-rendering: optimizelegibility;
-} 
-
-h1 { 
-    line-height: 40px;
-} 
-
-h1 { 
-    font-size: 38.5px;
-} 
-
-.tinymce h1  { 
-    font-family: BurbankBig,sans-serif; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures; 
-    line-height: 1.3em!important; 
-    margin: 1em 0 .15em 0;
-} 
-
-.tinymce h1  { 
-    font-size: 32px!important;
-} 
-
-.container h1 { 
-    font-family: BurbankBig,sans-serif; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures; 
-    font-size: 35px; 
-    color: #363636; 
-    margin-top: 0;
-} 
-
-.container h1 { 
-    margin-bottom: 32px;
-} 
-
-p { 
-    margin: 0 0 10px;
-} 
-
-.tinymce p  { 
-    margin: 0 0 1.6em 0;
-} 
-
-h2 { 
-    margin: 10px 0; 
-    font-family: inherit; 
-    font-weight: 700; 
-    line-height: 20px; 
-    color: inherit; 
-    text-rendering: optimizelegibility;
-} 
-
-h2 { 
-    line-height: 40px;
-} 
-
-h2 { 
-    font-size: 31.5px;
-} 
-
-.tinymce h2  { 
-    font-family: BurbankBig,sans-serif; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures; 
-    line-height: 1.3em!important; 
-    margin: 1em 0 .15em 0;
-} 
-
-.tinymce h2  { 
-    font-size: 24px!important;
-} 
-
-.container h2 { 
-    font-family: BurbankBig,sans-serif; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures; 
-    font-size: 35px; 
-    color: #363636; 
-    margin-top: 0;
-} 
-
-.container h2 { 
-    margin-bottom: 10px;
-} 
-
-ul { 
-    padding: 0; 
-    margin: 0 0 10px 25px;
-} 
-
-.thumbnails { 
-    margin-left: -20px; 
-    list-style: none;
-} 
-
-@media (min-width: 1200px){ 
-  .thumbnails { 
-    margin-left: -30px;
-  } 
-}     
-
-#lcProgramListResults *  { 
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    box-sizing: border-box;
-} 
-
-.thumbnails:after,.thumbnails:before { 
-    display: table; 
-    line-height: 0; 
-    content: "";
-} 
-
-.thumbnails:after { 
-    clear: both;
-} 
-
-a { 
-    color: #08c; 
-    text-decoration: none;
-} 
-
-a { 
-    color: #d9a900;
-} 
-
-a:active,a:hover { 
-    outline: 0;
-} 
-
-a:hover { 
-    color: #005580; 
-    text-decoration: underline;
-} 
-
-a,a:hover { 
-    color: #d9a900;
-} 
-
-li { 
-    line-height: 20px;
-} 
-
-[class*="span"] { 
-    float: left; 
-    min-height: 1px; 
-    margin-left: 20px;
-} 
-
-.span4 { 
-    width: 300px;
-} 
-
-@media (min-width: 1200px){ 
-  [class*="span"] { 
-    float: left; 
-    min-height: 1px; 
-    margin-left: 30px;
-  } 
-
-  .span4 { 
-    width: 370px;
-  } 
-}     
-
-.thumbnails > li  { 
-    float: left; 
-    margin-bottom: 20px; 
-    margin-left: 20px;
-} 
-
-@media (min-width: 1200px){ 
-  .thumbnails > li  { 
-    margin-left: 30px;
-  } 
-}     
-
-.thumbnail { 
-    display: block; 
-    padding: 4px; 
-    line-height: 20px; 
-    border: 1px solid #ddd; 
-    -webkit-border-radius: 4px; 
-    -moz-border-radius: 4px; 
-    border-radius: 4px; 
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.055); 
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.055); 
-    box-shadow: 0 1px 3px rgba(0,0,0,.055); 
-    -webkit-transition: all .2s ease-in-out; 
-    -moz-transition: all .2s ease-in-out; 
-    -o-transition: all .2s ease-in-out; 
-    transition: all .2s ease-in-out;
-} 
-
-.thumbnails .thumbnail  { 
-    border: none; 
-    -webkit-border-top-right-radius: 0; 
-    -webkit-border-bottom-right-radius: 0; 
-    -webkit-border-bottom-left-radius: 0; 
-    -webkit-border-top-left-radius: 0; 
-    -moz-border-radius-topright: 0; 
-    -moz-border-radius-bottomright: 0; 
-    -moz-border-radius-bottomleft: 0; 
-    -moz-border-radius-topleft: 0; 
-    border-top-right-radius: 0; 
-    border-bottom-right-radius: 0; 
-    border-bottom-left-radius: 0; 
-    border-top-left-radius: 0; 
-    -moz-background-clip: padding; 
-    -webkit-background-clip: padding-box; 
-    background-clip: padding-box; 
-    -moz-box-shadow: none; 
-    -webkit-box-shadow: none; 
-    -o-box-shadow: none; 
-    box-shadow: none;
-} 
-
-#lcProgramListResults .thumbnail  { 
-    position: relative;
-} 
-
-#lcProgramListResults .thumbnail .icons  { 
-    font-family: BurbankBigMedium,sans-serif!important; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures;
-} 
-
-#lcProgramListResults .thumbnail .icons  { 
-    display: table; 
-    width: 100%; 
-    height: 28px; 
-    color: #fff; 
-    font-size: 13px; 
-    line-height: 13px; 
-    background-color: #fff;
-} 
-
-#lcProgramListResults .thumbnail .inner  { 
-    position: relative; 
-    height: 565px; 
-    padding: 12px; 
-    background-color: #fff;
-} 
-
-@media (min-width: 1200px){ 
-  #lcProgramListResults .thumbnail .inner  { 
-    height: 605px;
-  } 
-}     
-
-#lcProgramListResults .thumbnail .icons .status  { 
-    display: table-cell; 
-    height: 28px; 
-    padding-left: 12px; 
-    padding-right: 12px; 
-    vertical-align: middle; 
-    background: url(https://www.lanovecentrum.cz/assets/default/images/bg_thumbnail_box_center.png);
-} 
-
-#lcProgramListResults .thumbnail .icons .status  { 
-    width: 100%;
-} 
-
-.center { 
-    text-align: center;
-} 
-
-#lcProgramListResults .thumbnail .inner .center  { 
-    font-family: BurbankBig,sans-serif; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures;
-} 
-
-#lcProgramListResults .thumbnail .inner .center  { 
-    padding-bottom: 12px; 
-    font-size: 14px; 
-    line-height: 14px; 
-    text-align: left;
-} 
-
-#lcProgramListResults .thumbnail .inner .img  { 
-    position: relative; 
-    width: 100%; 
-    height: 267px; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-} 
-
-@media (min-width: 1200px){ 
-  #lcProgramListResults .thumbnail .inner .img  { 
-    height: 338px;
-  } 
-}     
-
-.thumbnail .caption  { 
-    padding: 9px; 
-    color: #555;
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption  { 
-    padding: 13px 0 0 0; 
-    font-size: 13px;
-} 
-
-.clearfix:after,.clearfix:before { 
-    display: table; 
-    line-height: 0; 
-    content: "";
-} 
-
-.clearfix:after { 
-    clear: both;
-} 
-
-.shadow-left { 
-    position: absolute; 
-    bottom: 0; 
-    width: 184px; 
-    height: 6px; 
-    background-repeat: no-repeat;
-} 
-
-.shadow-left { 
-    left: 0; 
-    background-position: left top; 
-    background-image: url(https://www.lanovecentrum.cz/assets/default/images/thumbnail_shadow_bottomleft.png);
-} 
-
-#lcProgramListResults .thumbnail .shadow-left  { 
-    position: absolute; 
-    bottom: -6px;
-} 
-
-#lcProgramListResults .thumbnail .shadow-left  { 
-    left: 0;
-} 
-
-.shadow-right { 
-    position: absolute; 
-    bottom: 0; 
-    width: 184px; 
-    height: 6px; 
-    background-repeat: no-repeat;
-} 
-
-.shadow-right { 
-    right: 0; 
-    background-position: right top; 
-    background-image: url(https://www.lanovecentrum.cz/assets/default/images/thumbnail_shadow_bottomright.png);
-} 
-
-#lcProgramListResults .thumbnail .shadow-right  { 
-    position: absolute; 
-    bottom: -6px;
-} 
-
-#lcProgramListResults .thumbnail .shadow-right  { 
-    right: 0;
-} 
-
-.sprite { 
-    display: inline-block; 
-    overflow: hidden; 
-    background-repeat: no-repeat; 
-    background-image: url(https://www.lanovecentrum.cz/assets/default/images/spritemap.png);
-} 
-
-.sprite-order { 
-    width: 16px; 
-    height: 16px; 
-    background-position: -172px -2px;
-} 
-
-#lcProgramListResults .thumbnail .icons .sprite  { 
-    vertical-align: middle;
-} 
-
-#lcProgramListResults .thumbnail .inner .img > .caption  { 
-    position: absolute; 
-    left: 0; 
-    bottom: 0; 
-    width: 100%; 
-    padding: 12px; 
-    background-image: url(https://www.lanovecentrum.cz/assets/default/images/bg_navbar_top.png);
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption .description  { 
-    height: 95px;
-} 
-
-@media (min-width: 1200px){ 
-  #lcProgramListResults .thumbnail .inner > .caption .description  { 
-    height: 85px;
-  } 
-}     
-
-#lcProgramListResults .thumbnail .inner > .caption .order  { 
-    width: 33%; 
-    float: right; 
-    margin-top: 13px; 
-    text-align: center;
-} 
-
-table { 
-    max-width: 100%; 
-    background-color: transparent; 
-    border-collapse: collapse; 
-    border-spacing: 0;
-} 
-
-.tinymce table  { 
-    margin: 0 0 1.6em 0;
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption table  { 
-    width: 66%; 
-    margin: 13px 0 0 0; 
-    table-layout: fixed;
-} 
-
-h3 { 
-    margin: 10px 0; 
-    font-family: inherit; 
-    font-weight: 700; 
-    line-height: 20px; 
-    color: inherit; 
-    text-rendering: optimizelegibility;
-} 
-
-h3 { 
-    line-height: 40px;
-} 
-
-h3 { 
-    font-size: 24.5px;
-} 
-
-.container h3  { 
-    font-family: "Source Sans Pro",sans-serif; 
-    font-weight: 600;
-} 
-
-.tinymce h3  { 
-    font-family: BurbankBigMedium,sans-serif; 
-    font-size: 20px!important; 
-    line-height: 1.3em!important; 
-    margin-top: 1em; 
-    margin-bottom: 0;
-} 
-
-.container h3  { 
-    font-family: BurbankBigMedium,sans-serif; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures;
-} 
-
-.container h3  { 
-    font-size: 15px;
-} 
-
-#lcProgramListResults .thumbnail .inner .img > .caption h3  { 
-    font-family: BurbankBigMedium,sans-serif!important; 
-    font-weight: 400; 
-    font-kerning: normal; 
-    font-variant-ligatures: common-ligatures;
-} 
-
-#lcProgramListResults .thumbnail .inner .img > .caption h3  { 
-    height: 49px; 
-    margin: 0; 
-    font-size: 16px; 
-    line-height: 21px; 
-    color: #ffc700;
-} 
-
-@media (min-width: 1200px){ 
-  #lcProgramListResults .thumbnail .inner .img > .caption h3  { 
-    height: 49px; 
-    font-size: 19px; 
-    line-height: 24px;
-  } 
-}     
-
-#lcProgramListResults .thumbnail .inner .img > .caption .price  { 
-    color: #fff; 
-    font-size: 14px;
-} 
-
-@media (min-width: 1200px){ 
-  #lcProgramListResults .thumbnail .inner .img > .caption .price  { 
-    font-size: 15px;
-  } 
-}     
-
-#lcProgramListResults .thumbnail .inner > .caption .order a  { 
-    width: 86px; 
-    height: 86px; 
-    background-position: -134px -147px;
-} 
-
-/* Button new */
-#lcProgramListResults .thumbnail .inner > .caption .order a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 87px;
-  height: 87px;
-  background: #ffc700;
-  color: #000000e6;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  transform: rotate(-20deg);
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
+@media (min-width: 768px){
+    /*Specifikace: tabulka + button*/
+.specs {
+    display: flex;
+    justify-content: space-between;
 }
 
 
-#lcProgramListResults .thumbnail .inner .img > .caption h3 a  { 
-    color: #ffc700;
-} 
 
-#lcProgramListResults .thumbnail .inner .img > .caption .price > span  { 
-    color: #ffc700;
-} 
+/* Button new */
+.order a {
+  width: 88px;
+  height: 88px;
+}
 
-.tinymce table th  { 
-    padding: 8px; 
-    line-height: 17px;
-} 
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 
-.tinymce table th  { 
-    background-color: #ffc700;
-} 
+  .thumbnail {
+    width: calc(33% - 8px); /* dvě vedle sebe s mezerou */
+  }
 
-.tinymce table tbody > tr > th { 
-    text-align: left;
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption table th  { 
-    padding: 0; 
-    line-height: inherit; 
-    vertical-align: top;
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption table th  { 
-    width: 40%; 
-    font-weight: 400; 
-    text-align: left; 
-    background-color: transparent;
-} 
-
-.tinymce table td  { 
-    padding: 8px; 
-    line-height: 17px;
-} 
-
-.tinymce table td  { 
-    background-color: #ffe04f;
-} 
-
-.tinymce table tbody > tr:nth-child(2n+1) td { 
-    background-color: #ffea88;
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption table td  { 
-    font-family: "Source Sans Pro",sans-serif; 
-    font-weight: 600;
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption table td  { 
-    padding: 0; 
-    line-height: inherit; 
-    vertical-align: top;
-} 
-
-#lcProgramListResults .thumbnail .inner > .caption table td  { 
-    width: 60%; 
-    background-color: transparent;
-} 
-
-.tinymce table tbody > tr > th, .tinymce table > tr > th { 
-    text-align: left;
-} 
-
-.tinymce table tbody > tr:last-child > td:last-child { 
-    -webkit-border-top-right-radius: 0; 
-    -webkit-border-bottom-right-radius: 2px; 
-    -webkit-border-bottom-left-radius: 0; 
-    -webkit-border-top-left-radius: 0; 
-    -moz-border-radius-topright: 0; 
-    -moz-border-radius-bottomright: 2px; 
-    -moz-border-radius-bottomleft: 0; 
-    -moz-border-radius-topleft: 0; 
-    border-top-right-radius: 0; 
-    border-bottom-right-radius: 2px; 
-    border-bottom-left-radius: 0; 
-    border-top-left-radius: 0; 
-    -moz-background-clip: padding; 
-    -webkit-background-clip: padding-box; 
-    background-clip: padding-box;
-} 
+}
 
 
-/* These were inline style tags. Uses id+class to override almost everything */
-#style-BO3zn.style-BO3zn {  
-   background-image:url('data/images/400x400__x400y0__id8795__6d60c6eb37bf02865d026b085b0c5dd7__vysokeprekazkyhoupacka7.jpg');  
-}  
-#style-plFfO.style-plFfO {  
-   background-image:url('data/images/400x400__x232y10__id8876__8c385dda2f9fbf1d5e1ef9c196409fdc__adapracniprogram8.jpg');  
-}  
-#style-2oQ1N.style-2oQ1N {  
-   background-image:url('data/images/400x400__x222y8__id8867__4349d10428dcf774b1a469d7f94d2a67__vysokeprekazkyhoupacka12.jpg');  
-}  
-#style-LVn6z.style-LVn6z {  
-   background-image:url('data/images/400x400__x150y0__id8756__86edb24629842467b3454c85589e7c02__lanovecentrumemoce3.jpg');  
-}  
-#style-TtvUq.style-TtvUq {  
-   background-image:url('data/images/400x400__x380y117__id8434__ba5bf57cc0feb775a6ebfcdc14b7b485__laserpromo.jpg');  
-}  
-#style-BIOhy.style-BIOhy {  
-   background-image:url('data/images/400x400__x162y512__id8879__9921d415444edf3bfb964ae056569170__adaptacniprogram1.jpeg');  
-}  
-#style-t7JNY.style-t7JNY {  
-   background-image:url('data/images/400x400__x547y0__id7424__012916847bd52579a1cfcca6dae8f97c__bowling.jpg');  
-}  
+@media (min-width: 1200px){ 
 
+    body {
+        width: 1170px;
+        margin: auto;
+    }
 
+    table tr {
+    flex-direction: row;
+}
+
+}
