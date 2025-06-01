@@ -176,22 +176,14 @@ table td {
 
 /*Herní zona*/
 
-
 p { 
     margin: 0 0 10px;
 } 
-
-
 
 img { 
     height: auto; 
     max-width: 100%; 
 } 
-
-.detail {
-    display: flex;
-    flex-direction: column-reverse;
-}
 
 .parameters {
     margin-top: 20px;
@@ -202,45 +194,66 @@ img {
     margin: 0;
 }
 
-  .gift a {
-      display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 87px;
-  height: 87px;
-  background: linear-gradient(30deg,#0a9d8b 0%, #2fe8cc 50%);
-  color: #000000e6;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  transform: rotate(-20deg);
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  }
+.gift a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 87px;
+    height: 87px;
+    background: linear-gradient(30deg,#0a9d8b 0%, #2fe8cc 50%);
+    color: #000000e6;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
 
 .gift a:hover {
   background: #0bc2adc6;
   }
 
-  .buttons {
+.buttons {
     display: flex;
     justify-content: space-around;
     margin: 20px;
   }
+
+@media (min-width: 768px){
+
+    .detail {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .detail > div:first-child {
+    flex: 3;
+    }
+
+    .detail > div:last-child {
+    flex: 2;
+    }
+
+    .detail h1, p {
+        margin: 0 15px 10px;
+    }
+
+
+}
 
 @media (min-width: 1200px){ 
   .container { 
     width: 1170px;
   } 
 
-
-
     .thumbnails { 
     margin-left: -30px;
   } 
-
 
   .detail {
     display: flex;
