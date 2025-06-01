@@ -28,6 +28,21 @@ body {
     background-color: #fff;
 } 
 
+/*rozcestnik*/
+.rozcestnik {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20%;
+    font-size: 20px;
+}
+
+.code {
+    color: #555;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
 body { 
     color: #343434; 
     font-size: 16px;
@@ -624,9 +639,6 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-
-
 
 
 #lcProgramListResults .thumbnail .inner .img > .caption h3 a  { 
