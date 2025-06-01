@@ -8,25 +8,44 @@
 </head>
 <body>
     <div class="rozcestnik">
-    <div><a href="/info-k-programu.html">Info k programu 1</a>
-        <p class="code">/* Button new */<br>
-            #lcProgramListResults .thumbnail .inner > .caption .order a {<br>
-            display: flex;<br>
-            align-items: center;<br>
-            justify-content: center;<br>
-            width: 87px;<br>
-            height: 87px;<br>
-            background: #ffc700;<br>
-            color: #000000e6;<br>
-            border-radius: 50%;<br>
-            text-align: center;<br>
-            font-weight: bold;<br>
-            font-size: 12px;<br>
-            transform: rotate(-20deg);<br>
-            cursor: pointer;<br>
-            text-decoration: none;<br>
-            text-transform: uppercase;<br>
-}</p></div>
+    <div><h2><a href="/lanove-centrum/info-k-programu.html">Info k programu 1</a></h2>
+        <p class="code">
+            Kulatý button s hoverem. Černý text.
+        </p>
+        <p class="code">.order a {<br>
+  display: flex;<br>
+  align-items: center;<br>
+  justify-content: center;<br>
+  width: 87px;<br>
+  height: 87px;<br>
+  background: linear-gradient(30deg,#e9c303 0%, #fae840 50%);<br>
+  color: #000000e6;<br>
+  border-radius: 50%;<br>
+  text-align: center;<br>
+  font-weight: bold;<br>
+  font-size: 12px;<br>
+  transform: rotate(-20deg);<br>
+  cursor: pointer;<br>
+  text-decoration: none;<br>
+  text-transform: uppercase;<br>
+  float: right; <br>
+}<br>
+
+.order a:hover {<br>
+    background: #e9c303;</p>
+
+<h3>Tablet</h3>
+
+<p class="code">
+    @media (min-width: 768px){<br>
+        .order a {<br>
+  width: 88px;<br>
+  height: 88px;<br>
+}<br>
+}
+</p>
+
+</div>
         <a href="/info-k-programu-2.html">Info k programu 2</a>
         <a href="/">Info k programu 1</a>
     </div>

@@ -9,7 +9,6 @@ body {
 
 .inner  { 
     position: relative; 
-
     padding: 12px; 
     background-color: #fff;
 } 
@@ -73,7 +72,7 @@ body {
   justify-content: center;
   width: 87px;
   height: 87px;
-  background: linear-gradient(30deg,rgb(233, 195, 3) 0%, rgb(250, 232, 64) 50%);
+  background: linear-gradient(30deg,#e9c303 0%, #fae840 50%);
   color: #000000e6;
   border-radius: 50%;
   text-align: center;
@@ -87,7 +86,7 @@ body {
 }
 
 .order a:hover {
-    background: #eab803;
+    background: #e9c303b3;
 }
 
 table {
@@ -120,8 +119,9 @@ table td {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 20%;
+    padding: 20px;
     font-size: 20px;
+
 }
 
 .code {
