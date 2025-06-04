@@ -1,17 +1,30 @@
 body {
     font-family: "Source Sans Pro",sans-serif;;
-    padding: 2rem;
+    padding: 5rem;
     font-size:16px;
     color:#555;
     background: #ddcfcf;
 }
+
+h1 {
+    text-align: center;
+}
     
 .grid {
     display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 2rem;
+    grid-template-columns: 250px 900px;
+    gap: 1rem;
     align-items: center;
+    justify-content: center;
     margin-bottom: 3rem;
+}
+
+pre {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    overflow-x: auto;
 }
 
 .btn-circle-primary {
@@ -36,59 +49,6 @@ body {
     background: #e9c303b3;
 }
 
-pre {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    overflow-x: auto;
-}
-
-/*rozcestnik*/
-.rozcestnik {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    font-size: 20px;
-
-}
-
-.code {
-    color: #555;
-    font-size: 14px;
-    padding-top: 15px;
-}
-
-
-
-@media (min-width: 1200px){ 
-
-    body {
-        width: 1170px;
-        margin: auto;
-}
-
-/*Herní zona*/
-
-p { 
-    margin: 0 0 10px;
-} 
-
-img { 
-    height: auto; 
-    max-width: 100%; 
-} 
-
-.parameters {
-    margin-top: 20px;
-}
-
-.parameters h2, h3{
-    font-size: 16px;
-    margin: 0;
-}
-
 .btn-circle-secondary {
     display: flex;
     align-items: center;
@@ -110,49 +70,3 @@ img {
 .btn-circle-secondary:hover {
   background: #0bc2adc6;
   }
-
-.buttons {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-  }
-}
-
-@media (min-width: 768px){
-
-    .detail {
-        display: flex;
-        flex-direction: row-reverse;
-        align-content: flex-start;
-        margin-top: 20px;
-    }
-
-    .detail > div:first-child {
-    flex: 3;
-    }
-
-    .detail > div:last-child {
-    flex: 2;
-    }
-
-    .detail h1, p {
-        margin: 0 15px 10px;
-    }
-
-
-}
-
-@media (min-width: 1200px){ 
-  .container { 
-    width: 1170px;
-  } 
-
-    .thumbnails { 
-    margin-left: -30px;
-  } 
-
-  .detail {
-    display: flex;
-    flex-direction: row;
-}
-}
