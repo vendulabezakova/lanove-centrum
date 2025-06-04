@@ -7,47 +7,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="rozcestnik">
-    <div><h2><a href="/lanove-centrum/info-k-programu.html">Info k programu 1</a></h2>
-        <p class="code">
-            Kulatý button s hoverem. Černý text.
-        </p>
-        <p class="code">.order a {<br>
-  display: flex;<br>
-  align-items: center;<br>
-  justify-content: center;<br>
-  width: 87px;<br>
-  height: 87px;<br>
-  background: linear-gradient(30deg,#e9c303 0%, #fae840 50%);<br>
-  color: #000000e6;<br>
-  border-radius: 50%;<br>
-  text-align: center;<br>
-  font-weight: bold;<br>
-  font-size: 12px;<br>
-  transform: rotate(-20deg);<br>
-  cursor: pointer;<br>
-  text-decoration: none;<br>
-  text-transform: uppercase;<br>
-}<br>
+  <h1>Ukázka buttonů</h1>
 
-.order a:hover {<br>
-    background: #e9c303;</p>
+    <div class="grid">
+        <a href="#" class="btn-circle-primary">Info k programu</a>
+        <pre><code>
+        &lt;a href="#" class="btn-circle-info"&gt;Info kprogramu&lt;/a&gt;</code>
+        
+        .btn-circle-primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 87px;
+            height: 87px;
+            background: linear-gradient(30deg, #e9c303 0%, #fae840 50%);
+            color: #000000e6;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            transform: rotate(-20deg);
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
-<h3>Tablet</h3>
+        .btn-circle-primary:hover {
+            background: #e9c303b3;
+        }
+        </code></pre>
+    </div>
 
-<p class="code">
-    @media (min-width: 768px){<br>
-        .order a {<br>
-  width: 88px;<br>
-  height: 88px;<br>
-}<br>
-}
-</p>
-<!---
-</div>
-        <a href="/herni-zona.html">Herní zóna</a>
-        <a href="/">Info k programu 1</a>
-    </div>-->
+    <div class="grid">
+        <a href="#" class="btn-circle-secondary">Darovat</a>
+        <pre><code>
+        &lt;a href="#" class="btn-circle-secondary"&gt;Darovat&lt;/a&gt;</code>
+        
+        .btn-circle-secondary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 87px;
+            height: 87px;
+            background: linear-gradient(30deg,#0a9d8b 0%, #2fe8cc 50%);
+            color: #000000e6;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            transform: rotate(-20deg);
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .btn-circle-secondary:hover {
+            background: #0bc2adc6;
+        }
+        </code></pre>
+    </div>
+
+    <div class="grid">
+        <a href="#" class="btn-circle-primary">Objednat</a>
+        <pre><code>
+        &lt;a href="#" class="btn-circle-primary"&gt;Objednat&lt;/a&gt;</code>
+        
+        .btn-circle-primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 87px;
+            height: 87px;
+            background: linear-gradient(30deg, #e9c303 0%, #fae840 50%);
+            color: #000000e6;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            transform: rotate(-20deg);
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .btn-circle-info:primary {
+            background: #e9c303b3;
+        }
+        </code></pre>
+    </div>
+  
+  </div>
+
+
 </body>
 </html>
 

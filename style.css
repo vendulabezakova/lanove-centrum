@@ -1,117 +1,48 @@
-body {  
-    line-height:20px;
-    list-style:none;
-    font-family:"Source Sans Pro",sans-serif;
+body {
+    font-family: "Source Sans Pro",sans-serif;;
+    padding: 2rem;
     font-size:16px;
     color:#555;
-    font-weight:400;
-  } 
-
-.inner  { 
-    position: relative; 
-    padding: 12px; 
-    background-color: #fff;
-} 
-
-.inner .img  { 
-    position: relative; 
-    width: 100%; 
-    height: 267px; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-} 
-
-.caption  { 
-    padding: 13px 0 0 0; 
-    font-size: 13px;
-} 
-
-#style-5vdfX.style-5vdfX {  
-   background-image:url('data/images/400x400__x400y0__id8795__6d60c6eb37bf02865d026b085b0c5dd7__vysokeprekazkyhoupacka7.jpg');  
-}  
-
-/*Shadow*/
-.shadow-left { 
-    position: absolute; 
-    bottom: 0; 
-    width: 184px; 
-    height: 6px; 
-    background-repeat: no-repeat;
-    left: 0; 
-    background-position: left top; 
-    background-image: url(https://www.lanovecentrum.cz/assets/default/images/thumbnail_shadow_bottomleft.png);
-} 
-
-.shadow-right { 
-    position: absolute; 
-    bottom: 0; 
-    width: 184px; 
-    height: 6px; 
-    background-repeat: no-repeat;
-    right: 0; 
-    background-position: right top; 
-    background-image: url(https://www.lanovecentrum.cz/assets/default/images/thumbnail_shadow_bottomright.png);
-} 
-
-.thumbnail {
-    width: 100%;
+    background: #ddcfcf;
+}
+    
+.grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
-/*Specifikace: tabulka + button*/
-.specs {
+.btn-circle-primary {
     display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
+    align-items: center;
+    justify-content: center;
+    width: 87px;
+    height: 87px;
+    background: linear-gradient(30deg, #e9c303 0%, #fae840 50%);
+    color: #000000e6;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
 
-/* Button new */
-.order a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 87px;
-  height: 87px;
-  background: linear-gradient(30deg,#e9c303 0%, #fae840 50%);
-  color: #000000e6;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  transform: rotate(-20deg);
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.order a:hover {
+.btn-circle-primary:hover {
     background: #e9c303b3;
 }
 
-table {
-    width: 66%;
-    text-align: left;
-    table-layout: fixed;
+pre {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    overflow-x: auto;
 }
-
-table tr {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-table th {
-    font-weight: 400;
-}
-
-table td {
-    font-weight: 600;
-}
-
-  table th,
-  table td {
-    width: 100%;
-  }
 
 /*rozcestnik*/
 .rozcestnik {
@@ -131,46 +62,11 @@ table td {
 
 
 
-
-@media (min-width: 768px){
-    /*Specifikace: tabulka + button*/
-.specs {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-/* Button new */
-.order a {
-  width: 88px;
-  height: 88px;
-}
-
-.thumbnails {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-  .thumbnail {
-    width: calc(33% - 8px); /* dvě vedle sebe s mezerou */
-  }
-
-}
-
-
 @media (min-width: 1200px){ 
 
     body {
         width: 1170px;
         margin: auto;
-    }
-
-    table tr {
-    flex-direction: row;
-}
-
 }
 
 /*Herní zona*/
@@ -193,7 +89,7 @@ img {
     margin: 0;
 }
 
-.gift a {
+.btn-circle-secondary {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,7 +107,7 @@ img {
     text-transform: uppercase;
     }
 
-.gift a:hover {
+.btn-circle-secondary:hover {
   background: #0bc2adc6;
   }
 
@@ -258,4 +154,4 @@ img {
     display: flex;
     flex-direction: row;
 }
-}  
+}
