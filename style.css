@@ -1,5 +1,8 @@
 body {
-    font-family: "Source Sans Pro",sans-serif;;
+    font-family: "Burbank Big Regular Black";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
     padding: 5rem;
     font-size:16px;
     color:#555;
@@ -9,6 +12,7 @@ body {
 h1 {
     text-align: center;
 }
+
     
 .grid {
     display: grid;
@@ -27,46 +31,90 @@ pre {
     overflow-x: auto;
 }
 
-.btn-circle-primary {
+.btn-circle-primary--large {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 87px;
-    height: 87px;
+    width: 120px;
+    height: 120px;
     background: linear-gradient(30deg, #e9c303 0%, #fae840 50%);
     color: #000000e6;
     border-radius: 50%;
     text-align: center;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 18px;
     transform: rotate(-20deg);
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     }
 
-.btn-circle-primary:hover {
+.btn-circle-primary--large:hover {
     background: #e9c303b3;
 }
 
-.btn-circle-secondary {
+.btn-circle-primary--small {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 87px;
-    height: 87px;
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(30deg, #e9c303 0%, #fae840 50%);
+    color: #000000e6;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+.btn-circle-primary--small:hover {
+    background: #e9c303b3;
+}
+
+.btn-circle-secondary--small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
     background: linear-gradient(30deg,#0a9d8b 0%, #2fe8cc 50%);
     color: #000000e6;
     border-radius: 50%;
     text-align: center;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     transform: rotate(-20deg);
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     }
 
-.btn-circle-secondary:hover {
+.btn-circle-secondary--small:hover {
+  background: #0bc2adc6;
+  }
+
+.btn-circle-secondary--large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(30deg,#0a9d8b 0%, #2fe8cc 50%);
+    color: #000000e6;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    transform: rotate(-20deg);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+.btn-circle-secondary--large:hover {
   background: #0bc2adc6;
   }
